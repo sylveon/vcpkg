@@ -26,7 +26,7 @@ else(VCPKG_TARGET_ARCHITECTURE STREQUAL "x64")
 endif()
 
 if(VCPKG_TARGET_IS_LINUX)
-    file(RENAME "${SOURCE_PATH}/lib/${ARCH_FOLDER}/discord_game_sdk.so" "libdiscord_game_sdk.so")
+    file(RENAME "${SOURCE_PATH}/lib/${ARCH_FOLDER}/discord_game_sdk.so" "${SOURCE_PATH}/lib/${ARCH_FOLDER}/libdiscord_game_sdk.so")
 endif()
 
 vcpkg_configure_cmake(
